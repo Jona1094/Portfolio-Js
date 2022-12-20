@@ -229,10 +229,14 @@ a:hover {
     text-shadow: 2px 2px #372463;
 }
 
+.sobremi__ContImg {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
 .sobremi__ContactWp {
-    position: absolute;
-    bottom: 0;
-    left: 1rem;
     opacity: 0;
     transition: 1.5s ease-in-out all;
     background-color: #e4dede;
@@ -241,22 +245,18 @@ a:hover {
 
 .sobremi__ContactWp.visible {
     opacity: 1;
-    transform: translateY(-70px);
+   transform: translateX(-70px);
 }
 
 .sobremi__ContactIn {
-    position: absolute;
-    opacity: 0;
     transition: 1.5s ease-in-out all;
-    bottom: -50px;
-    left: 12%;
     background-color: #e4dede;
     margin: 1rem; 
 }
 
 .sobremi__ContactIn.visible {
     opacity: 1;
-    transform: translateY(-120px);
+    transform: translateX(-70px);
 }
 
 .contactLogo {
