@@ -112,6 +112,8 @@ let cont1 = document.querySelector ('.cont1')
 let cont2 = document.querySelector ('.cont2')
 let cont3 = document.querySelector ('.cont3')
 let cont4 = document.querySelector ('.cont4')
+let plan1 = document.querySelector ('.servicios__Cont1')
+let plan2 = document.querySelector ('.servicios__Cont2')
 
 const sobreMiDev = (entradas, observador1) => {
     entradas.forEach((entrada) => {
@@ -139,6 +141,8 @@ observador1.observe(cont1)
 observador1.observe(cont2)
 observador1.observe(cont3)
 observador1.observe(cont4)
+observador1.observe(plan1)
+observador1.observe(plan2)
 
 /* PORTFOLIO */
 /* 
