@@ -29,6 +29,14 @@
    justify-content: center;
 }
 
+.logoImg {
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    top: -40%;
+    object-fit: cover;
+}
+
 .inicio__Nombre {
     color: wheat;
     font-size: 3.4rem;
@@ -66,7 +74,7 @@
     transition: 1.5s ease-in-out all;
     position: absolute;
     bottom: -100px;
-    left: 37%;
+    left: 41%;
     margin: 1rem;
     cursor: pointer;
     font-family: 'Source Sans Pro', sans-serif;
@@ -283,7 +291,7 @@ a:hover {
     transition: 1s ease-in-out all;
     width: 85%;
     height: 500px;
-    background-color: rgba(241, 238, 232, 0.897);
+    background-color: rgba(242, 242, 241, 0.897);
     z-index: 99;
     border: solid #070807 3px;
     border-radius: 5px;
@@ -295,7 +303,7 @@ a:hover {
     position: absolute;
     top: -45px;
     left: -45px;
-    animation: girarcodigo 2s linear infinite;
+    animation: girarcodigo 3s linear infinite;
 }
 
 @keyframes girarcodigo {
@@ -310,7 +318,7 @@ a:hover {
     position: absolute;
     top: -45px;
     right: -50px;
-    animation: girarcodigo 3s infinite;
+    animation: girarcodigo 3s linear infinite;
 }
 
 .githubImg {
@@ -319,7 +327,7 @@ a:hover {
     position: absolute;
     bottom: -15px;
     right: -50px;
-    animation: girarcodigo 3s infinite;
+    animation: girarcodigo 3s linear infinite;
 }
 
 .sobremi__Tec.visible {
@@ -386,7 +394,7 @@ a:hover {
 }
 
 .portfolio__Cont {
-    width: 90%;
+    width: 80%;
     height: 90%;
     background-color: #f4f6f4;
     border-radius: 2px;
@@ -510,9 +518,11 @@ a:hover {
 
 .contacto {
     width: 100%;
-    height: 100vh;
+    height: 90vh;
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+    background-color: #030302;
 }
 
 .contacto__Info {
@@ -520,9 +530,16 @@ a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 50%;
-    height: 100vh;
-    background-color: rgb(12, 9, 9);
+    width: 30%;
+    height: 90vh;
+    background-color: rgb(3, 3, 2);
+    opacity: 0;
+    transition: ease-in-out all 1.5s;
+}
+
+.contacto__Info.visible {
+    opacity: 1;
+    transform: translateX(50px);
 }
 
 .contacto__Info-div1 {
@@ -534,7 +551,7 @@ a:hover {
 }
 
 .contacto__Info-desP {
-    height: 30vh;
+    height: 30%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -583,11 +600,112 @@ a:hover {
     }
 }
 
-.contacto__Info-div2 {
-    height: 100vh;
-    width: 50vw;
+.contacto__Form {
+    background-color: #030302;
+    height: 90vh;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: ease-in-out all 1.5s;
 }
 
+.contacto__Form.visible {
+    opacity: 1;
+    transform: translateX(-50px);
+}
+
+.contacto__Frase {
+    margin: 2rem;
+    font-size: 1.5;
+    font-family: 'Unbounded', cursive;
+    letter-spacing: 1px;
+    color: #e4dede;
+    text-align: center;
+}
+
+.contacto__Frase2 {
+    color: #0ada0a;
+}
+
+.contacto__Flecha {
+    width: 40px;
+    height: 30px;
+    filter: invert(96%) sepia(100%) saturate(12%) hue-rotate(276deg) brightness(105%) contrast(100%);
+    animation: contactoFlecha infinite 1.5s;
+}
+
+@keyframes contactoFlecha {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(5px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.contacto__Img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(3, 3, 2);
+    width: 5px;
+}
+
+.contacto__ImgCodigo {
+    width: 85px;
+    animation: girarcodigo linear infinite 3s;
+    margin: 1rem;
+    filter: invert(96%) sepia(100%) saturate(12%) hue-rotate(276deg) brightness(105%) contrast(100%);
+}
+
+form {
+    border: solid #dce6db 2px;
+    border-radius: 5px;
+    margin: 2rem;
+    padding: 1rem;
+}
+
+.contacto__Dato {
+    font-size: 1.5;
+    font-family: 'Play', sans-serif;
+    color: #dce6db;
+    margin: 5px;
+}
+
+.contacto__Input {
+    font-family: 'Play', sans-serif;
+    width: 550px;
+    height: 30px;
+    background-color: rgb(243, 227, 196);
+    resize: none;
+    margin: 5px;
+    padding: 1rem;
+}
+
+.textarea {
+    height: 200px;
+}
+
+.contacto__Enviar {
+    font-family: 'Play', sans-serif;
+    font-size: 1.7rem;
+    width: 20%;
+    margin: 5px;
+    padding: 5px;
+    cursor: pointer;
+    background: #0ada0a;
+    color: #040a03f1;
+    border: none;
+
+}
 
 /* SERVICIOS */
 
@@ -626,9 +744,25 @@ a:hover {
     margin: 1rem;
     opacity: 0;
     transition: ease-in-out all 1.5s;
-    -webkit-box-shadow: -6px -6px 5px 0px rgba(245,237,245,1);
+    animation: infinite 2.2s plan;
+}
+
+@keyframes plan {
+    0% {
+        -webkit-box-shadow: -6px -6px 5px 0px rgba(245,237,245,1);
     -moz-box-shadow: -6px -6px 5px 0px rgba(245,237,245,1);
     box-shadow: -6px -6px 5px 0px rgba(245,237,245,1);
+    }
+    50% {
+        -webkit-box-shadow: 5px -6px 5px 0px rgba(245,237,245,1);
+    -moz-box-shadow: 5px -6px 5px 0px rgba(245,237,245,1);
+    box-shadow: 5px -6px 5px 0px rgba(245,237,245,1);
+    }
+    100% {
+        -webkit-box-shadow: -6px -6px 5px 0px rgba(245,237,245,1);
+    -moz-box-shadow: -6px -6px 5px 0px rgba(245,237,245,1);
+    box-shadow: -6px -6px 5px 0px rgba(245,237,245,1);
+    }
 }
 
 .servicios__Cont1.visible {
@@ -648,9 +782,7 @@ a:hover {
     margin: 1rem;
     opacity: 0;
     transition: ease-in-out all 1.5s;
-    -webkit-box-shadow: 5px -6px 5px 0px rgba(245,237,245,1);
--moz-box-shadow: 5px -6px 5px 0px rgba(245,237,245,1);
-box-shadow: 5px -6px 5px 0px rgba(245,237,245,1);
+    animation: infinite 3s plan;
 }
 
 .servicios__Cont2.visible {
@@ -711,6 +843,7 @@ box-shadow: 5px -6px 5px 0px rgba(245,237,245,1);
     align-items: baseline;
     margin: 1rem;
     width: 400px;
+    height: 45%;
 }
 
 .servicios__Info  {
@@ -721,6 +854,34 @@ box-shadow: 5px -6px 5px 0px rgba(245,237,245,1);
     color: #fff;
 }
 
+.servicios_Contactame {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.servicios__ContactPlan {
+    margin: 1.5rem;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 2rem;
+    text-decoration: none;
+    color: #4615ba;
+    animation: infinite 1.8s contratar;
+}
+
+@keyframes contratar {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
 .itemImg {
     width: 15px;
     height: 15px;
@@ -729,7 +890,53 @@ box-shadow: 5px -6px 5px 0px rgba(245,237,245,1);
     margin-right: 5px;
 }
 
+/* FOOTER */
 
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(53, 20, 143);
+}
+
+.footer__ContLogo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer__Logo {
+    width: 180px;
+    height: 180px;
+}
+
+.footer__ContDesc {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer__Ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.footer__DR {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.3rem;
+    color: #e4dede;
+    margin: 1rem;
+}
+
+.footer__LineaDiv {
+    margin: 1rem;
+    width: 500px;
+    height: 2px;
+    background-color: #030302;
+}
 
 
 
@@ -898,7 +1105,7 @@ box-shadow: 5px -6px 5px 0px rgba(245,237,245,1);
     .item:hover {
         transform: scale(1.05);
     }
-    
+
     a:hover {
         color: rgb(232, 240, 240);
         
@@ -1066,7 +1273,13 @@ box-shadow: 5px -6px 5px 0px rgba(245,237,245,1);
     
     @keyframes girarcodigo {
         0% {
-            transform: rotate(360deg);
+            transform: rotate(0);
+        }
+        50% {
+            transform: rotate(180deg);
+        }
+        100% {
+            transform: rotate(0);
         }
     }
     
@@ -1076,7 +1289,7 @@ box-shadow: 5px -6px 5px 0px rgba(245,237,245,1);
         position: absolute;
         top: -45px;
         right: -50px;
-        animation: girarcodigo 3s infinite;
+        animation: girarcodigo 1.5s linear infinite;
     }
     
     .githubImg {
@@ -1085,7 +1298,7 @@ box-shadow: 5px -6px 5px 0px rgba(245,237,245,1);
         position: absolute;
         bottom: -15px;
         right: -50px;
-        animation: girarcodigo 3s infinite;
+        animation: girarcodigo 1.5s linear infinite;
     }
     
     .sobremi__Tec.visible {
@@ -1364,6 +1577,27 @@ box-shadow: 5px -6px 5px 0px rgba(245,237,245,1);
     }
  
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

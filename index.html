@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Unbounded&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./index.css">
     <title>Portfolio</title>
 </head>
@@ -17,7 +18,8 @@
         <div id="particles-js"></div>
         <div class="inicio__Cont">
             <h1 class="inicio__Nombre">HOLA! SOY JONATAN FERRARI.</h1>
-            <h1 class="inicio__Titulo">SOY DESARROLLADOR FULL-STACK WEB.</h1>
+            <h1 class="inicio__Titulo">TE INVITO A RECORRER MI SITIO WEB.</h1>
+            <img class="logoImg" src="./Imagenes/logoJE2.png" alt="logo Jonatan Ezequiel">
             <a href="#work"><div class="inicio__ContBtn">Ver mi trabajo <img class="flechaAbajo" src="./Imagenes/flechaAbajo.png" alt="Flecha"></div></a>
         </div>
     </div>
@@ -27,8 +29,8 @@
                 <li class="item"><a href="#inicio">Inicio</a></li>
                 <li class="item"><a href="#sobremi">Sobre mi</a></li>
                 <li class="item"><a href="#portfolio">Portfolio</a></li>
-                <li class="item"><a href="">Servicios</a></li>
-                <li class="item"><a href="./Paginas/Contacto.html">Contacto</a></li>
+                <li class="item"><a href="#servicios">Servicios</a></li>
+                <li class="item"><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -37,8 +39,8 @@
             <img class="sobremi__ImgJ" src="./Imagenes/jonatan.png" alt="">
         </div>
         <div class="sobremi__Desc" id="sobremi">
-            <h1 class="sobremi__Titulo">Soy Desarrolador Full-Stack Web</h1>
-            <p class="sobremi__P">Soy de Rosario, Santa Fe, Argentina. <br/>Conocí la programación en profunidad gracias al <a target="_blank" href="https://proyectodalto.com/">Proyecto Dalto</a>, seleccionado junto a dos compañeros, entre 13.500 personas.<br/>
+            <h1 class="sobremi__Titulo">Soy Desarrolador Web Frontend</h1>
+            <p class="sobremi__P">Soy de Rosario, Santa Fe, Argentina. Pero actualmente vivo en Ciudad Autónoma de Buenos Aires, Argentina. <br/>Conocí la programación en profunidad gracias al <a target="_blank" href="https://proyectodalto.com/">Proyecto Dalto</a>, seleccionado junto a dos compañeros, entre 13.500 personas.<br/>
             Soy un apasionado por el Frontend, pero sigo ampliando mis conocimietos en el mundo del Backend,
             ya que es de suma importancia estar actualizado día a día con las nuevas tecnologías.</p>
             <div class="sobremi__ContImg">
@@ -59,7 +61,6 @@
             <img class="githubImg" src="./Imagenes/github.png" alt="github">
         </div>
     </div>
-
     <div class="portfolio" id="portfolio">
         <div class="portfolio__Cont">
             <div class="cont1">
@@ -84,7 +85,7 @@
             </div> 
         </div>
     </div>
-    <div class="servicios">
+    <div class="servicios" id="servicios">
         <h1 class="servicios__Titulo">LANDING PAGE</h1>
         <div class="servicios_Container">
             <div class="servicios__Cont1">
@@ -104,6 +105,9 @@
                     <span class="servicios__Info"><img class="itemImg" src="./Imagenes/item.png" alt="Item">Soporte</span>
                     <span class="servicios__Info"><img class="itemImg" src="./Imagenes/item.png" alt="Item">Hasta 4 modificaciones al mes</span>
                 </div>
+                <div class="servicios_Contactame">
+                    <a class="servicios__ContactPlan" target="_blank" href="https://wa.me/+541168401026">CONTRATAR PLAN</a>
+                </div>
             </div>
             <div class="servicios__Cont2 ">
                 <h1 class="servicios__Plan">PREMIUM</h1>
@@ -117,10 +121,78 @@
                     <span class="servicios__Info"><img class="itemImg" src="./Imagenes/item.png" alt="Item">Formulario de contacto</span>
                     <span class="servicios__Info"><img class="itemImg" src="./Imagenes/item.png" alt="Item">Hasta 8 modificaciones al mes</span>
                 </div>
+                <div class="servicios_Contactame">
+                    <a class="servicios__ContactPlan" target="_blank" href="https://wa.me/+541168401026">CONTRATAR PLAN</a>
+                </div>
             </div>
         </div>
-        
     </div>
+    <div class="contacto" id="contacto">
+        <div class="contacto__Info">
+            <div class="contacto__Info-div1">
+                <div class="contacto__Info-desP">
+                    <h1 class="contacto__Info-desc">¡Tu consulta no molesta! Escribime y buscamos el mejor diseño para tu web.</h1>
+                </div>
+                <div class="contacto__InfoP">
+                    <div class="contacto__Info-wpp">
+                        <a target="_blank" href="https://wa.me/+541168401026"><img class="contactLogoColor" src="../Imagenes/whatsapp.png" alt="whatsapp"></a>
+                        <h1 class="contacto__Info-desc">+54 - 11 68401026</h1>
+                    </div>
+                    <div class="contacto__Info-gm">
+                        <img class="contactLogoColor" src="../Imagenes/correo.png" alt="Gmail">
+                        <h1 class="contacto__Info-desc">También podes contactarme por e-mail a jonaaf32@gmail.com</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contacto__Img">
+            <img class="contacto__ImgCodigo" src="./Imagenes/codigo.png" alt="Codigo">
+            <img class="contacto__ImgCodigo" src="./Imagenes/llaves.png" alt="LLaves">
+            <img class="contacto__ImgCodigo" src="./Imagenes/git.png" alt="Git">
+        </div>
+        <div class="contacto__Form">
+            <h1 class="contacto__Frase">Si no apareces en Google, <span class="contacto__Frase2">no existis.</span></h1>
+            <img class="contacto__Flecha" src="./Imagenes/flechaAbajo.png" alt="FlechaAbajo">
+            <form action="">
+                <div>
+                    <h1 class="contacto__Dato">Nombre</h1>
+                    <input class="contacto__Input" type="text" placeholder="Nombre">
+                </div>
+                <div>
+                    <h1 class="contacto__Dato">Correo electrónico</h1>
+                    <input class="contacto__Input" type="text" placeholder="Correo electrónico">
+                </div>
+                <div>
+                    <h1 class="contacto__Dato">Celular</h1>
+                    <input class="contacto__Input" type="number" placeholder="Celular">
+                </div>
+                <div>
+                    <h1 class="contacto__Dato">Consulta:</h1>
+                    <textarea class="contacto__Input textarea" name="mensaje" id="msg" rows="10"></textarea>
+                </div>
+                <div>
+                    <button class="contacto__Enviar">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer__ContLogo">
+            <img class="footer__Logo" src="./Imagenes/logoJE.png" alt="Logo Jonatan Ezequiel">
+            <h1 class="footer__DR">© Jonatan Ezequiel - Todos los derechos reservados. </h1>
+            <div class="footer__LineaDiv"></div>
+        </div>
+        <div>
+            <ul class="footer__Ul">
+                <li class="item"><a target="_blank" href="https://wa.me/+541168401026"><img class="contactLogo" src="./Imagenes/whatsapp.png" alt="WhatsappLogo"></a></li>
+                <li class="item"><a href="#inicio">Inicio</a></li>
+                <li class="item"><a href="#sobremi">Sobre mi</a></li>
+                <li class="item"><a href="#portfolio">Portfolio</a></li>
+                <li class="item"><a href="#servicios">Servicios</a></li>
+                <li class="item"><a href="./Paginas/Contacto.html">Contacto</a></li>
+            </ul>          
+        </div>
+    </footer>
       <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     <script src="./index.js"></script>
