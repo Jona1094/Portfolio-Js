@@ -2892,7 +2892,7 @@ form {
     
     .footer__Ul {
         display: flex;
-        flex-direction: row;
+        flex-wrap: wrap;
         justify-content: center;
         align-items: center;
         margin-bottom: 1rem;
@@ -2903,11 +2903,12 @@ form {
         font-size: 1.3rem;
         color: #e4dede;
         margin: 1rem;
+        text-align: center;
     }
     
     .footer__LineaDiv {
         margin: 1rem;
-        width: 500px;
+        width: 350px;
         height: 2px;
         background-color: #030302;
     }
