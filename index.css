@@ -292,6 +292,7 @@ a:hover {
     align-items: center;
     width: 100%;
     height: 70vh;
+    
 }
 
 .sobremi__Tec {
@@ -349,21 +350,18 @@ a:hover {
 
 .sobremi__TecTitulo {
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 2rem;
+    font-size: 2.3rem;
     color:  #060614;
-    text-shadow: #0e0f14 1px 1px;
+    /* text-shadow: #0e0f14 1px 1px; */
     margin: 1.5rem;
-    /* opacity: 0; */
+    opacity: 0;
     transition: 1s ease-in-out all;
-    position: absolute;
-    top: 0;
-    left: 30%;
 }
 
-/* .sobremi__TecTitulo.visible {
+.sobremi__TecTitulo.visible {
     opacity: 1;
-    transform: translateY(-550px);
-} */
+    transform: translateY(-20px);
+} 
 
 .imgTecCont {
     width: 170px;
@@ -414,6 +412,10 @@ a:hover {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+}
+
+.portfolio__Inicio {
+   display: none;
 }
 
 .cont1 {
@@ -2296,20 +2298,16 @@ form {
     .sobremi__TecTitulo {
         font-family: 'Source Sans Pro', sans-serif;
         font-size: 1rem;
-        color:  #060614;
+        color: #060614;
         text-shadow: #0e0f14 1px 1px;
-        margin: 1.5rem;
-        /* opacity: 0; */
-        /* transition: 1s ease-in-out all;
-        position: absolute;
-        top: 0;
-        left: 30%; */
+        opacity: 0;
+        transition: 1s ease-in-out all;
     }
     
-    /* .sobremi__TecTitulo.visible {
+    .sobremi__TecTitulo.visible {
         opacity: 1;
-        transform: translateY(-550px);
-    } */
+        transform: translateY(50px);
+    }
     
     .imgTecCont {
         width: 120px;
@@ -2341,29 +2339,36 @@ form {
     }
     
     /* PORTFOLIO */
+
+    .portfolio__Inicio {
+        font-family: 'Rajdhani', sans-serif;
+        margin-top: 2rem;
+        font-size: 2.2rem;
+    }
     
     .portfolio {
         width: 100%;
-        height: 150vh;
+        height: 100%;
         background-color: #060614;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
     }
     
     .portfolio__Cont {
-        width: 80%;
-        height: 90%;
+        width: 100%;
+        height: 100%;
         background-color: #f4f6f4;
         border-radius: 2px;
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
     }
     
     .cont1 {
-        width: 700px;
+        width: 350px;
         height: 500px;
         background-color: rgb(8, 7, 7);
         display: flex;
@@ -2378,13 +2383,13 @@ form {
     
     .cont1.visible {
         opacity: 1;
-        transform: translateY(50px);
+        transform: translateY(10px);
         border: #dce6db solid 1px;
     }
     
     .cont2 {
         margin: 1rem;
-        width: 700px;
+        width: 350px;
         height: 500px;
         background-color: rgb(8, 7, 7);
         display: flex;
@@ -2398,13 +2403,13 @@ form {
     
     .cont2.visible {
         opacity: 1;
-        transform: translateY(50px);
+        transform: translateY(5px);
         border: #dce6db solid 1px;
     }
     
     .cont3 {
         margin: 1rem;
-        width: 700px;
+        width: 350px;
         height: 500px;
         background-color: rgb(8, 7, 7);
         display: flex;
@@ -2418,13 +2423,13 @@ form {
     
     .cont3.visible {
         opacity: 1;
-        transform: translateY(-50px);
+        transform: translateY(5px);
         border: #dce6db solid 1px;
     }
     
     .cont4 {
         margin: 1rem;
-        width: 700px;
+        width: 350px;
         height: 500px;
         background-color: rgb(8, 7, 7);
         display: flex;
@@ -2438,19 +2443,19 @@ form {
     
     .cont4.visible {
         opacity: 1;
-        transform: translateY(-50px);
+        transform: translateY(5px);
         border: #dce6db solid 1px;
     }
     
     .portfolio__Img {
-        width: 500px;
+        width: 300px;
         height: 300px;
         object-fit: cover;
         margin: auto;
     }
     
     .portfolio__Titulo {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
         font-family: 'Rubik', sans-serif;
         color: #dce6db;
     }
