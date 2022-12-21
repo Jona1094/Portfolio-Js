@@ -349,7 +349,8 @@ a:hover {
 }
 
 .sobremi__TecTitulo {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Rubik', sans-serif;
+    text-shadow: #a6be1b 1px 1px;
     font-size: 2.3rem;
     color:  #060614;
     /* text-shadow: #0e0f14 1px 1px; */
@@ -396,17 +397,18 @@ a:hover {
 
 .portfolio {
     width: 100%;
-    height: 150vh;
+    height: 130vh;
     background-color: #060614;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .portfolio__Cont {
     width: 80%;
     height: 90%;
-    background-color: #f4f6f4;
+    background-color: #f7f5f7;
     border-radius: 2px;
     display: flex;
     flex-wrap: wrap;
@@ -415,7 +417,11 @@ a:hover {
 }
 
 .portfolio__Inicio {
-   display: none;
+   color: #dce6db;
+   font-size: 3rem;
+   font-family: 'Rubik', sans-serif;
+   height: 70px;
+   text-shadow: #a6be1b 1px 1px;
 }
 
 .cont1 {
@@ -434,7 +440,6 @@ a:hover {
 
 .cont1.visible {
     opacity: 1;
-    transform: translateY(50px);
     border: #dce6db solid 1px;
 }
 
@@ -454,7 +459,6 @@ a:hover {
 
 .cont2.visible {
     opacity: 1;
-    transform: translateY(50px);
     border: #dce6db solid 1px;
 }
 
@@ -474,7 +478,6 @@ a:hover {
 
 .cont3.visible {
     opacity: 1;
-    transform: translateY(-50px);
     border: #dce6db solid 1px;
 }
 
@@ -494,7 +497,6 @@ a:hover {
 
 .cont4.visible {
     opacity: 1;
-    transform: translateY(-50px);
     border: #dce6db solid 1px;
 }
 
@@ -734,7 +736,8 @@ form {
 
 .servicios__Titulo {
     font-size: 3.5rem;
-    font-family: 'Play', sans-serif;
+    font-family: 'Rubik', sans-serif;
+    text-shadow: #a6be1b 1px 1px;
 }
 
 .servicios_Container {
@@ -1704,7 +1707,8 @@ form {
     
     .servicios__Titulo {
         font-size: 3.5rem;
-        font-family: 'Play', sans-serif;
+        font-family: 'Rubik', sans-serif;
+        text-shadow: #a6be1b 1px 1px;
     }
     
     .servicios_Container {
@@ -2343,7 +2347,7 @@ form {
     .portfolio__Inicio {
         font-family: 'Rajdhani', sans-serif;
         margin-top: 2rem;
-        font-size: 2.2rem;
+        font-size: 2.8rem;
     }
     
     .portfolio {
@@ -2481,9 +2485,9 @@ form {
     
     .contacto {
         width: 100%;
-        height: 90vh;
+        height: 100%;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-around;
         background-color: #030302;
     }
@@ -2493,8 +2497,8 @@ form {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 30%;
-        height: 90vh;
+        width: 350px;
+        height: 50%;
         background-color: rgb(3, 3, 2);
         opacity: 0;
         transition: ease-in-out all 1.5s;
@@ -2502,7 +2506,7 @@ form {
     
     .contacto__Info.visible {
         opacity: 1;
-        transform: translateX(50px);
+        transform: translateY(50px);
     }
     
     .contacto__Info-div1 {
@@ -2565,8 +2569,8 @@ form {
     
     .contacto__Form {
         background-color: #030302;
-        height: 90vh;
-        width: 40%;
+        height: 50%;
+        width: 350px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -2577,7 +2581,7 @@ form {
     
     .contacto__Form.visible {
         opacity: 1;
-        transform: translateX(-50px);
+        transform: translateY(50px);
     }
     
     .contacto__Frase {
@@ -2615,7 +2619,7 @@ form {
     
     .contacto__Img {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
         justify-content: center;
         background-color: rgb(3, 3, 2);
@@ -2672,31 +2676,32 @@ form {
     
     /* SERVICIOS */
     
-    
     .servicios {
         width: 100%;
-        height: 100vh;
+        height: 100%;
         display: flex;
         flex-direction: column;
         text-align: center;
     }
     
     .servicios__Titulo {
-        font-size: 3.5rem;
-        font-family: 'Play', sans-serif;
+        font-size: 2.8rem;
+        font-family: 'Rubik', sans-serif;
+        text-shadow: #a6be1b 1px 1px;
     }
     
     .servicios_Container {
         background-color: #060614;
         display: flex;
-        flex-direction: row;
-        justify-content: space-around;
+        flex-direction: column;
+        justify-content: center;
         align-items: center;
-        height: 100vh;
+        height: 100%;
+        width: 100%;
     }
     
     .servicios__Cont1 {
-        width: 400px;
+        width: 350px;
         height: 700px;
         background-color: #030302;
         border-radius: 5px;
@@ -2705,7 +2710,7 @@ form {
         flex-direction: column;
         align-items: center;
         margin: 1rem;
-        opacity: 0;
+        opacity: 1;
         transition: ease-in-out all 1.5s;
         animation: infinite 2.2s plan;
     }
@@ -2729,12 +2734,12 @@ form {
     }
     
     .servicios__Cont1.visible {
-        transform: translateX(200px);
+        transform: translateY(10px);
         opacity: 1;
     }
     
     .servicios__Cont2 {
-        width: 400px;
+        width: 350px;
         height: 700px;
         background-color: #030302;
         border-radius: 5px;
@@ -2750,7 +2755,7 @@ form {
     
     .servicios__Cont2.visible {
         opacity: 1;
-        transform: translateX(-200px);
+        transform: translateY(20px);
     }
     
     .servicios__Plan {
@@ -2849,8 +2854,7 @@ form {
         width: 15px;
         height: 15px;
         filter: invert(96%) sepia(100%) saturate(12%) hue-rotate(276deg) brightness(105%) contrast(100%);
-        margin-left: 1rem;
-        margin-right: 5px;
+        margin-left: 1.5rem;
     }
     
     /* FOOTER */
