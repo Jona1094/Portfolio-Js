@@ -197,5 +197,20 @@ portfolio.appendChild(portfolioDC)
 
  */
 
+/* NAV MOBILE */
+
+/* let menuMobile = document.querySelector ('.menuMobile')
+let menuMobileX = document.querySelector ('.menuMobileX')
+let navMobile = document.querySelector ('.navMobile')
+
+function abrirNavMobile() {
+    if ('click') {
+        navMobile.style.display = 'flex';
+    }
+}
+
+menuMobile.addEventListener ('click', abrirNavMobile) */
+
+
 
 

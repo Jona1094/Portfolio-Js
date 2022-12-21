@@ -94,6 +94,18 @@
 
 /* NAV */
 
+.menuMobile {
+    display: none;
+}
+
+.menuMobileX {
+    display: none;
+}
+
+.navMobile {
+    display: none;
+}
+
 .header {
     /* height: 150px;
     background-color: #B73E3E; */
@@ -160,7 +172,7 @@ a:hover {
 
 .sobremi {
     width: 100%;
-    height: 80vh;
+    height: 100%;
     background-color: rgb(1, 5, 5);
     display: flex;
     flex-direction: row;
@@ -2023,7 +2035,7 @@ form {
     
     .inicio__ContBtn.visible {
         opacity: 1;
-        transform: translateY(-110px);
+        transform: translateY(-150px);
     }
     
     .flechaAbajo {
@@ -2031,48 +2043,51 @@ form {
         height: 20px;
     }
     
-    
     /* NAV */
     
     .header {
-        /* height: 150px;
-        background-color: #B73E3E; */
-        font-size: 20px;
-        position: sticky;
-        top: 0;
-        left: 0;
+       display: none;
+    }
+    
+    .menuMobile {
+        width: 500px;
+        height: 500px;
+        z-index: -1;
+        position: absolute;
+        right: 5px;
+        top: 5%;
+    }
+
+    .menuMobileX {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        right: 5px;
+        top: 42%;
+        z-index: 150;
+    }
+    
+    .navMobile {
+        display: flex;
         width: 100%;
-        height: 70px;
-        transition: all 1.5s;
-        z-index: 10;
+        height: 400px;
+        background-color: red;
+        position: absolute;
+        bottom: 0;
+        z-index: 99;
+        display: none;
+    }
+
+    .navMobile__Ul {
+        margin: 1rem;
         display: flex;
-        justify-content: center;
-        align-items: center;
-        background: rgb(53, 20, 143);
+        flex-direction: column;
     }
-    
-    header.down{
-        background: rgb(53, 20, 143);
-        padding: 15px 80px;
-        transition: all 1.5s;
+
+    .navMobile__Li {
+        
     }
-    
-    .nav {
-        height: 70px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .ul {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        width: auto;
-        height: auto;
-    }
-    
+
     .item {
         font-size: 1.5rem;
         list-style: none;
@@ -2100,17 +2115,17 @@ form {
     
     .sobremi {
         width: 100%;
-        height: 80vh;
+        height: 100%;
         background-color: rgb(1, 5, 5);
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
     }
     
     .sobremi__Img {
         width: 45%;
-        height: 80vh;
+        height: 40%;
         margin: 5px;
         display: flex;
         justify-content: center;
@@ -2118,8 +2133,9 @@ form {
     }
     
     .sobremi__ImgJ {
-        width: 450px;
-        height: 450px;
+        max-width: 399px;
+        max-height: 370px;
+        width: auto;
         opacity: 0;
         transition: 1.5s ease-in-out all;
         object-fit: cover;
@@ -2127,7 +2143,7 @@ form {
     
     .sobremi__ImgJ.visible {
         opacity: 1;
-        transform: translateX(30%);
+        transform: translateY(2%);
         border-radius: 5px;
     }
     
@@ -2135,8 +2151,8 @@ form {
         font-family: 'Outfit', sans-serif;
         font-weight: 150;
         color: #e4dede;
-        width: 55%;
-        height: 80vh;  
+        width: 350px;
+        height: 50%;  
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -2147,27 +2163,28 @@ form {
         transition: 1s ease-in-out all;
         margin: 1rem;
         opacity: 0;
-        font-size: 2.3rem;
+        font-size: 1.5rem;
+        text-align: center;
     }
     
     .sobremi__Titulo.visible {
         opacity: 1;
-        transform: translateX(-10%);
+        transform: translateY(-3%);
     }
     
     .sobremi__P {
         text-align: justify;
-        width: 70%;
+        width: 90%;
         height: auto;
         transition: 1.5s ease-in-out all;
         opacity: 0;
-        font-size: 1.7rem;
+        font-size: 1.5rem;
         margin: 1rem;
     }
     
     .sobremi__P.visible {
         opacity: 1;
-        transform: translateX(-10%)
+        transform: translateY(-2%)
     }
     
     
@@ -2193,7 +2210,7 @@ form {
     
     .sobremi__ContactWp.visible {
         opacity: 1;
-       transform: translateX(-70px);
+       transform: translateY(-10px);
     }
     
     .sobremi__ContactIn {
@@ -2204,7 +2221,7 @@ form {
     
     .sobremi__ContactIn.visible {
         opacity: 1;
-        transform: translateX(-70px);
+        transform: translateY(-10px);
     }
     
     .contactLogo {
