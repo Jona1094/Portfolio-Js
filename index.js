@@ -37,7 +37,6 @@ setTimeout (efectoMaquina, speed)
 // Aparición de Elementos en INICIO //
 
 let text2 = document.querySelector('.inicio__Titulo')
-let btnInicio = document.querySelector('.inicio__ContBtn')
 
 const aparecerTexto = (entradas, observador) => {
     entradas.forEach((entrada) => {
@@ -54,21 +53,20 @@ const observador = new IntersectionObserver (aparecerTexto, {
 })
 
 observador.observe(text2)
-observador.observe(btnInicio) 
 
 /* SOBRE MI */
 
 let sobreMi = document.querySelector ('.sobremi__Tec')
 
-let tecImg = [{'logoTec': '../imagenes/html.png', 'tec': 'HTML'},
-              {'logoTec': '../imagenes/css.png', 'tec': 'CSS'},
-              {'logoTec': '../imagenes/js.png', 'tec': 'JAVASCRIPT'},
-              {'logoTec': '../imagenes/bootstrap.jpg', 'tec': 'BOOTSTRAP'},
-              {'logoTec': '../imagenes/react.png', 'tec': 'REACT'},
-              {'logoTec': '../imagenes/sass.png', 'tec': 'SASS'},
-              {'logoTec': '../imagenes/git.png', 'tec': 'GIT'},
-              {'logoTec': '../imagenes/node.png', 'tec': 'NODE'},
-              {'logoTec': '../imagenes/python.png', 'tec': 'PYTHON'}
+let tecImg = [{'logoTec': '../Imagenes/html.png', 'tec': 'HTML'},
+              {'logoTec': '../Imagenes/css.png', 'tec': 'CSS'},
+              {'logoTec': '../Imagenes/js.png', 'tec': 'JAVASCRIPT'},
+              {'logoTec': '../Imagenes/bootstrap.jpg', 'tec': 'BOOTSTRAP'},
+              {'logoTec': '../Imagenes/react.png', 'tec': 'REACT'},
+              {'logoTec': '../Imagenes/sass.png', 'tec': 'SASS'},
+              {'logoTec': '../Imagenes/git.png', 'tec': 'GIT'},
+              {'logoTec': '../Imagenes/node.png', 'tec': 'NODE'},
+              {'logoTec': '../Imagenes/python.png', 'tec': 'PYTHON'}
             ]
 
 let mostrarTecImg = (logoTec, tec) => {
@@ -107,15 +105,6 @@ let iconWp = document.querySelector('.sobremi__ContactWp')
 let iconIn = document.querySelector('.sobremi__ContactIn')
 let tecDev = document.querySelector('.imgTecCont')
 let tecDevImg = document.querySelector('.sobremi__Tec')
-let tecTitulo = document.querySelector('.sobremi__TecTitulo')
-let cont1 = document.querySelector ('.cont1')
-let cont2 = document.querySelector ('.cont2')
-let cont3 = document.querySelector ('.cont3')
-let cont4 = document.querySelector ('.cont4')
-let plan1 = document.querySelector ('.servicios__Cont1')
-let plan2 = document.querySelector ('.servicios__Cont2')
-let contacto = document.querySelector ('.contacto__Info')
-let contactoForm = document.querySelector ('.contacto__Form')
 
 const sobreMiDev = (entradas, observador1) => {
     entradas.forEach((entrada) => {
@@ -138,29 +127,17 @@ observador1.observe(iconWp)
 observador1.observe(iconIn)
 observador1.observe(tecDev)
 observador1.observe(tecDevImg)
-observador1.observe(tecTitulo)
-observador1.observe(cont1)
-observador1.observe(cont2)
-observador1.observe(cont3)
-observador1.observe(cont4)
-observador1.observe(plan1)
-observador1.observe(plan2)
-observador1.observe(contacto)
-observador1.observe(contactoForm)
-
-
-
 /* PORTFOLIO */
 /* 
 let portfolio = document.querySelector ('.portfolio')
 
-let proyectos = [{'portImg': '../imagenes/davidMilan.png',
+let proyectos = [{'portImg': '../Imagenes/davidMilan.png',
                   'titulo': 'DAVID MILAN'},
-                 {'portImg': '../imagenes/fotografo.png',
+                 {'portImg': '../Imagenes/fotografo.png',
                   'titulo': 'EZEQUIEL PH'},
-                 {'portImg': '../imagenes/davidMilan.png',
+                 {'portImg': '../Imagenes/davidMilan.png',
                   'titulo': 'David Milan'},
-                 {'portImg': '../imagenes/fotografo.png',
+                 {'portImg': '../Imagenes/fotografo.png',
                   'titulo': 'Ezequiel PH'}]
 
 let mostrarProyectos = (portImg, titulo) => {
@@ -199,18 +176,28 @@ portfolio.appendChild(portfolioDC)
 
 /* NAV MOBILE */
 
-/* let menuMobile = document.querySelector ('.menuMobile')
-let menuMobileX = document.querySelector ('.menuMobileX')
+let menuMobile = document.querySelector ('.menuMovil')
+let menuMobileX = document.querySelector ('.xmenumovil')
 let navMobile = document.querySelector ('.navMobile')
 
 function abrirNavMobile() {
-    if ('click') {
-        navMobile.style.display = 'flex';
-    }
+        navMobile.style.display = 'flex'
+        navMobile.style.animation = 'abrirNav 1s'
+        menuMobile.classList.add ('menuMovilNone')
+        menuMobileX.classList.add ('xmenumovilFlex')
+        menuMobileX.classList.remove ('xmenumovil')
 }
 
-menuMobile.addEventListener ('click', abrirNavMobile) */
+menuMobile.addEventListener ('click', abrirNavMobile)
 
+const cerrarMenuMobile = () => {
+    navMobile.style.animation = 'cerrarNav 1s forwards'
+    menuMobileX.classList.remove ('xmenumovilFlex')
+    menuMobile.classList.remove ('menuMovilNone')
+    menuMobileX.classList.add ('xmenumovil')
+    menuMobile.classList.add ('menuMovil')
+}
 
+menuMobileX.addEventListener ('click', cerrarMenuMobile) 
 
 

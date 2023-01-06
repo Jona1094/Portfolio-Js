@@ -1,216 +1,507 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Unbounded&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./index.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Coda&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Play&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Hind:wght@300&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Unbounded&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./index.css"/>
     <title>Portfolio</title>
-</head>
-<body>
+  </head>
+  <body class="body">
     <div class="inicio" id="inicio">
-        <!-- NAV MOBILE -->
-    <img class="menuMobile" src="./Imagenes/menuMobile.png" alt="menuMobile">
-    <img class="menuMobileX" src="./Imagenes/xSalida.png" alt="MenuSalir">
-    <nav class="navMobile">
+      <!-- NAV MOBILE -->
+      <div id="particles-js"></div>
+      <!-- <div class="navBar__Container"> -->
+        <img class="menuMovil" src="./Imagenes/menuMovil.png" alt="">
+        <img class="xmenumovil" src="./Imagenes/xmenumovil.png" alt="">
+      <!-- </div> -->
+      <nav class="navMobile">
         <ul class="navMobile__Ul">
-            <li class="item"><a href="#inicio">Inicio</a></li>
-            <li class="item"><a href="#sobremi">Sobre mi</a></li>
-            <li class="item"><a href="#portfolio">Portfolio</a></li>
-            <li class="item"><a href="#servicios">Servicios</a></li>
-            <li class="item"><a href="#contacto">Contacto</a></li>
+          <li class="item"><a href="#inicio">Inicio</a></li>
+          <li class="item"><a href="#sobremi">Sobre mi</a></li>
+          <!-- <li class="item"><a href="#portfolio">Portfolio</a></li> -->
+          <li class="item"><a href="#servicios">Servicios</a></li>
+          <li class="item"><a href="#contacto">Contacto</a></li>
         </ul>
-    </nav>
-        <div id="particles-js"></div>
-        <div class="inicio__Cont">
-            <h1 class="inicio__Nombre">HOLA! SOY JONATAN FERRARI.</h1>
-            <h1 class="inicio__Titulo">TE INVITO A RECORRER MI SITIO WEB.</h1>
-            <img class="logoImg" src="./Imagenes/logoJE2.png" alt="logo Jonatan Ezequiel">
-            <a href="#work"><div class="inicio__ContBtn">Ver mi trabajo <img class="flechaAbajo" src="./Imagenes/flechaAbajo.png" alt="Flecha"></div></a>
-        </div>
+      </nav>
+      <div class="inicio__Cont">
+        <img
+        class="logoImg"
+        src="./Imagenes/logoJE2.png"
+        alt="logo Jonatan Ezequiel"
+      />
+        <h1 class="inicio__Nombre">SOY JONATAN FERRARI.</h1>
+        <h2 class="inicio__Titulo">TE INVITO A RECORRER MI SITIO WEB.</h2>
+      </div>
     </div>
     <header class="header">
-        <nav class="nav">
-            <ul class="ul">
-                <li class="item"><a href="#inicio">Inicio</a></li>
-                <li class="item"><a href="#sobremi">Sobre mi</a></li>
-                <li class="item"><a href="#portfolio">Portfolio</a></li>
-                <li class="item"><a href="#servicios">Servicios</a></li>
-                <li class="item"><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
+      <nav class="nav">
+        <ul class="ul">
+          <li class="item"><a href="#inicio">Inicio</a></li>
+          <li class="item"><a href="#sobremi">Sobre mi</a></li>
+          <li class="item"><a href="#portfolio">Portfolio</a></li>
+          <li class="item"><a href="#servicios">Servicios</a></li>
+          <li class="item"><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
     </header>
     <div class="sobremi" id="work">
-        <div class="sobremi__Img">
-            <img class="sobremi__ImgJ" src="./Imagenes/jonatan.png" alt="">
+      <div class="sobremi__Img">
+        <img class="sobremi__ImgJ" src="./Imagenes/jonatan.png" alt="" />
+      </div>
+      <div class="sobremi__Desc" id="sobremi">
+        <h1 class="sobremi__Titulo">Soy Desarrolador Web Frontend</h1>
+        <p class="sobremi__P">
+          Soy de Rosario, Santa Fe, Argentina. Actualmente vivo en Ciudad
+          Autónoma de Buenos Aires, Argentina. <br/>Conocí la programación en
+          profunidad gracias al
+          <a target="_blank" href="https://proyectodalto.com/">Proyecto Dalto</a
+          >, seleccionado junto a dos compañeros, entre 13.500 personas.<br />
+          Soy un apasionado por el Frontend, pero sigo ampliando mis
+          conocimietos en el mundo del Backend, ya que es de suma importancia
+          estar actualizado día a día con las nuevas tecnologías.
+        </p>
+        <div class="sobremi__ContImg">
+          <div class="sobremi__ContactWp">
+            <a target="_blank" href="https://wa.me/+541168401026"
+              ><img
+                class="contactLogo"
+                src="./Imagenes/whatsapp.png"
+                alt="WhatsappLogo"
+            /></a>
+          </div>
+          <div class="sobremi__ContactIn">
+            <a target="_blank" href="https://www.linkedin.com/in/jonatandev/"
+              ><img
+                class="contactLogo"
+                src="./Imagenes/linkedin.png"
+                alt="LinkedinLogo"
+            /></a>
+          </div>
         </div>
-        <div class="sobremi__Desc" id="sobremi">
-            <h1 class="sobremi__Titulo">Soy Desarrolador Web Frontend</h1>
-            <p class="sobremi__P">Soy de Rosario, Santa Fe, Argentina. Pero actualmente vivo en Ciudad Autónoma de Buenos Aires, Argentina. <br/>Conocí la programación en profunidad gracias al <a target="_blank" href="https://proyectodalto.com/">Proyecto Dalto</a>, seleccionado junto a dos compañeros, entre 13.500 personas.<br/>
-            Soy un apasionado por el Frontend, pero sigo ampliando mis conocimietos en el mundo del Backend,
-            ya que es de suma importancia estar actualizado día a día con las nuevas tecnologías.</p>
-            <div class="sobremi__ContImg">
-                <div class="sobremi__ContactWp">
-                    <a target="_blank" href="https://wa.me/+541168401026"><img class="contactLogo" src="./Imagenes/whatsapp.png" alt="WhatsappLogo"></a>
-                </div>
-                <div class="sobremi__ContactIn">
-                    <a target="_blank" href="https://www.linkedin.com/in/jonatandev/"><img class="contactLogo" src="./Imagenes/linkedin.png" alt="LinkedinLogo"></a>
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
     <div class="sobremi__TecCont">
-        <h1 class="sobremi__TecTitulo">ESTAS SON LAS TECNOLOGIAS CON LAS QUE TRABAJO</h1>
-        <div class="sobremi__Tec">
-            <img class="codigoImg" src="./Imagenes/codigo.png" alt="codigo">
-            <img class="llavesImg" src="./Imagenes/llaves.png" alt="llaves">
-            <img class="githubImg" src="./Imagenes/github.png" alt="github">
-        </div>
+      <h1 class="sobremi__TecTitulo">
+        ESTAS SON LAS TECNOLOGIAS CON LAS QUE TRABAJO
+      </h1>
+      <div class="sobremi__Tec">
+        <img class="codigoImg" src="./Imagenes/codigo.png" alt="codigo" />
+        <img class="llavesImg" src="./Imagenes/llaves.png" alt="llaves" />
+        <img class="githubImg" src="./Imagenes/github.png" alt="github" />
+      </div>
     </div>
     <!-- PORTFOLIO -->
-    <div class="portfolio" id="portfolio">
-        <h1 class="portfolio__Inicio">PORTFOLIO</h1>
-        <div class="portfolio__Cont">
-            
-            <div class="cont1">
-                <img class="portfolio__Img" src="./Imagenes/davidMilan.png" alt="davidMilan">
-                <h1 class="portfolio__Titulo">DAVID MILAN</h1>
-                <a class="portfolio__Btn" href="">Ver Sitio</a>
-            </div>
-            <div class="cont2">  
-                <img class="portfolio__Img" src="./Imagenes/fotografo.png" alt="Ezequiel PH">
-                <h1 class="portfolio__Titulo">EZEQUIEL PH</h1>
-                <a class="portfolio__Btn" href="">Ver Sitio</a>
-            </div>
-            <div class="cont3">
-                <img class="portfolio__Img" src="./Imagenes/davidMilan.png" alt="davidMilan">
-                <h1 class="portfolio__Titulo">DAVID MILAN</h1>
-                <a class="portfolio__Btn" href="">Ver Sitio</a>
-            </div>
-            <div class="cont4">  
-                <img class="portfolio__Img" src="./Imagenes/fotografo.png" alt="Ezequiel PH">
-                <h1 class="portfolio__Titulo">EZEQUIEL PH</h1>
-                <a class="portfolio__Btn" href="">Ver Sitio</a>
-            </div> 
+    <!-- <div class="portfolio" id="portfolio">
+      <h1 class="portfolio__Inicio">PORTFOLIO</h1>
+      <div class="portfolio__Cont">
+        <div class="cont1">
+          <img
+            class="portfolio__Img"
+            src="./Imagenes/davidMilan.png"
+            alt="davidMilan"
+          />
+          <h1 class="portfolio__Titulo">DAVID MILAN</h1>
+          <a class="portfolio__Btn" href="">Ver Sitio</a>
         </div>
+        <div class="cont2">
+          <img
+            class="portfolio__Img"
+            src="./Imagenes/fotografo.png"
+            alt="Ezequiel PH"
+          />
+          <h1 class="portfolio__Titulo">EZEQUIEL PH</h1>
+          <a class="portfolio__Btn" href="">Ver Sitio</a>
+        </div>
+        <div class="cont3">
+          <img
+            class="portfolio__Img"
+            src="./Imagenes/davidMilan.png"
+            alt="davidMilan"
+          />
+          <h1 class="portfolio__Titulo">DAVID MILAN</h1>
+          <a class="portfolio__Btn" href="">Ver Sitio</a>
+        </div>
+        <div class="cont4">
+          <img
+            class="portfolio__Img"
+            src="./Imagenes/fotografo.png"
+            alt="Ezequiel PH"
+          />
+          <h1 class="portfolio__Titulo">EZEQUIEL PH</h1>
+          <a class="portfolio__Btn" href="">Ver Sitio</a>
+        </div>
+      </div> -->
     </div>
     <div class="servicios" id="servicios">
-        <h1 class="servicios__Titulo">LANDING PAGE</h1>
-        <div class="servicios_Container">
-            <div class="servicios__Cont1">
-                <h1 class="servicios__Plan">BASICO</h1>
-                <div class="servicios__ContPrecio">
-                    <h1 class="servicios__Precio"><span class="servicios__Peso">$</span>2.499</h1>
-                    <h3 class="servicios__Decimal">00</h3>
-                    <h4 class="servicios__Mes">/mes</h4>
-                </div>
-                <div class="servicios__ContInfo">
-                    <span class="servicios__Info"><img class="itemImg" src="./Imagenes/item.png" alt="Item">Diseño Web</span>
-                    <span class="servicios__Info"><img class="itemImg" src="./Imagenes/item.png" alt="Item">Diseño Responsivo</span>
-                    <span class="servicios__Info"><img class="itemImg" src="./Imagenes/item.png" alt="Item">Dominio Gratis</span>
-                    <span class="servicios__Info"><img class="itemImg" src="./Imagenes/item.png" alt="Item">SEO</span>
-                    <span class="servicios__Info"><img class="itemImg" src="./Imagenes/item.png" alt="Item">Links a redes sociales y Whatsapp</span>
-                    <span class="servicios__Info"><img class="itemImg" src="./Imagenes/item.png" alt="Item">Hasta 5 secciones</span>
-                    <span class="servicios__Info"><img class="itemImg" src="./Imagenes/item.png" alt="Item">Soporte</span>
-                    <span class="servicios__Info"><img class="itemImg" src="./Imagenes/item.png" alt="Item">Hasta 4 modificaciones al mes</span>
-                </div>
-                <div class="servicios_Contactame">
-                    <a class="servicios__ContactPlan" target="_blank" href="https://wa.me/+541168401026">CONTRATAR PLAN</a>
-                </div>
-            </div>
-            <div class="servicios__Cont2 ">
-                <h1 class="servicios__Plan">PREMIUM</h1>
-                <div class="servicios__ContPrecio">
-                    <h1 class="servicios__Precio"><span class="servicios__Peso">$</span>3.499</h1>
-                    <h3 class="servicios__Decimal">00</h3>
-                    <h4 class="servicios__Mes">/mes</h4>
-                </div>
-                <div class="servicios__ContInfo">
-                    <span class="servicios__Info"><img class="itemImg" src="./Imagenes/item.png" alt="Item">Todo el plan BASICO</span>
-                    <span class="servicios__Info"><img class="itemImg" src="./Imagenes/item.png" alt="Item">Formulario de contacto</span>
-                    <span class="servicios__Info"><img class="itemImg" src="./Imagenes/item.png" alt="Item">Hasta 8 modificaciones al mes</span>
-                </div>
-                <div class="servicios_Contactame">
-                    <a class="servicios__ContactPlan" target="_blank" href="https://wa.me/+541168401026">CONTRATAR PLAN</a>
-                </div>
-            </div>
+      <h1 class="servicios__Titulo">SERVICIOS LANDING PAGE</h1>
+      <div class="servicios_Container">
+        <div class="servicios__Cont">
+          <h1 class="servicios__Plan">BASICO</h1>
+          <div class="servicios__ContPrecio">
+            <h1 class="servicios__Precio">
+              <span class="servicios__Peso">$</span>25.000
+            </h1>
+            <h3 class="servicios__Decimal">00</h3>
+            <!-- <h4 class="servicios__Mes">/mes</h4> -->
+          </div>
+          <div class="servicios__ContInfo">
+            <span class="servicios__Info"
+              ><img
+                class="itemImg"
+                src="./Imagenes/item.png"
+                alt="Item"
+              />Diseño Web</span
+            >
+            <span class="servicios__Info"
+              ><img
+                class="itemImg"
+                src="./Imagenes/item.png"
+                alt="Item"
+              />Diseño Responsivo</span
+            >
+            <span class="servicios__Info"
+              ><img
+                class="itemImg"
+                src="./Imagenes/item.png"
+                alt="Item"
+              />Dominio Gratis por 1 año</span
+            >
+            <span class="servicios__Info"
+              ><img class="itemImg" src="./Imagenes/item.png" alt="Item" />Hosting gratis por 1 año</span
+            >
+            <span class="servicios__Info"
+              ><img
+                class="itemImg"
+                src="./Imagenes/item.png"
+                alt="Item"
+              />SEO</span
+            >
+            <span class="servicios__Info"
+              ><img class="itemImg" src="./Imagenes/item.png" alt="Item" />Links
+              a redes y Whatsapp</span
+            >
+            <span class="servicios__Info"
+              ><img class="itemImg" src="./Imagenes/item.png" alt="Item" />Hasta
+              3 secciones</span
+            >
+            <span class="servicios__Info"
+            ><img class="itemImg" src="./Imagenes/item.png" alt="Item" />Hasta 10 imagenes</span
+          >
+          </div>
+          <div class="servicios_Contactame">
+            <a class="portfolio__Btn" href="/pages/basico.html">Ejemplo</a>
+            <a
+              class="servicios__ContactPlan"
+              target="_blank"
+              href="https://wa.me/+541168401026"
+              >CONTRATAR PLAN</a
+            >
+          </div>
         </div>
+        <div class="servicios__Cont">
+          <h1 class="servicios__Plan">BASICO</h1>
+          <div class="servicios__ContPrecio">
+            <h1 class="servicios__Precio">
+              <span class="servicios__Peso">$</span>35.000
+            </h1>
+            <h3 class="servicios__Decimal">00</h3>
+            <!-- <h4 class="servicios__Mes">/mes</h4> -->
+          </div>
+          <div class="servicios__ContInfo">
+            <span class="servicios__Info"
+              ><img
+                class="itemImg"
+                src="./Imagenes/item.png"
+                alt="Item"
+              />Diseño Web</span
+            >
+            <span class="servicios__Info"
+              ><img
+                class="itemImg"
+                src="./Imagenes/item.png"
+                alt="Item"
+              />Diseño Responsivo</span
+            >
+            <span class="servicios__Info"
+              ><img
+                class="itemImg"
+                src="./Imagenes/item.png"
+                alt="Item"
+              />Dominio Gratis por 1 año</span
+            >
+            <span class="servicios__Info"
+              ><img class="itemImg" src="./Imagenes/item.png" alt="Item" />Hosting gratis por 1 año</span
+            >
+            <span class="servicios__Info"
+              ><img
+                class="itemImg"
+                src="./Imagenes/item.png"
+                alt="Item"
+              />SEO</span
+            >
+            <span class="servicios__Info"
+              ><img class="itemImg" src="./Imagenes/item.png" alt="Item" />Links
+              a redes y Whatsapp</span
+            >
+            <span class="servicios__Info"
+              ><img class="itemImg" src="./Imagenes/item.png" alt="Item" />Hasta
+              5 secciones</span
+            >
+            <span class="servicios__Info"
+            ><img class="itemImg" src="./Imagenes/item.png" alt="Item" />Hasta 20 imagenes</span
+          >
+          </div>
+          <div class="servicios_Contactame">
+            <a class="portfolio__Btn" href="/pages/basico.html">Ejemplo</a>
+            <a
+              class="servicios__ContactPlan"
+              target="_blank"
+              href="https://wa.me/+541168401026"
+              >CONTRATAR PLAN</a
+            >
+          </div>
+        </div>
+        <div class="servicios__Cont">
+          <h1 class="servicios__Plan">PREMIUM</h1>
+          <div class="servicios__ContPrecio">
+            <h1 class="servicios__Precio">
+              <span class="servicios__Peso">$</span>48.000
+            </h1>
+            <h3 class="servicios__Decimal">00</h3>
+            <!-- <h4 class="servicios__Mes">/mes</h4> -->
+          </div>
+          <div class="servicios__ContInfo">
+            <span class="servicios__Info"
+              ><img
+                class="itemImg"
+                src="./Imagenes/item.png"
+                alt="Item"
+              />Diseño Web</span
+            >
+            <span class="servicios__Info"
+              ><img
+                class="itemImg"
+                src="./Imagenes/item.png"
+                alt="Item"
+              />Diseño Responsivo</span
+            >
+            <span class="servicios__Info"
+              ><img
+                class="itemImg"
+                src="./Imagenes/item.png"
+                alt="Item"
+              />Dominio Gratis por 1 año</span
+            >
+            <span class="servicios__Info"
+              ><img class="itemImg" src="./Imagenes/item.png" alt="Item" />Hosting gratis por 1 año</span
+            >
+            <span class="servicios__Info"
+              ><img
+                class="itemImg"
+                src="./Imagenes/item.png"
+                alt="Item"
+              />SEO</span
+            >
+            <span class="servicios__Info"
+              ><img class="itemImg" src="./Imagenes/item.png" alt="Item" />Links
+              a redes y Whatsapp</span
+            >
+            <span class="servicios__Info"
+              ><img class="itemImg" src="./Imagenes/item.png" alt="Item" />Hasta
+              5 secciones</span
+            >
+            <span class="servicios__Info"
+            ><img class="itemImg" src="./Imagenes/item.png" alt="Item" />Hasta 10 imagenes</span
+          >
+            <span class="servicios__Info"
+              ><img
+                class="itemImg"
+                src="./Imagenes/item.png"
+                alt="Item"
+              />Soporte</span
+            >
+          </div>
+          <div class="servicios_Contactame">
+            <a class="portfolio__Btn" href="/pages/basico.html">Ejemplo</a>
+            <a
+              class="servicios__ContactPlan"
+              target="_blank"
+              href="https://wa.me/+541168401026"
+              >CONTRATAR PLAN</a
+            >
+          </div>
+        </div>
+      </div>
     </div>
     <div class="contacto" id="contacto">
-        <div class="contacto__Info">
-            <div class="contacto__Info-div1">
-                <div class="contacto__Info-desP">
-                    <h1 class="contacto__Info-desc">¡Tu consulta no molesta! Escribime y buscamos el mejor diseño para tu web.</h1>
-                </div>
-                <div class="contacto__InfoP">
-                    <div class="contacto__Info-wpp">
-                        <a target="_blank" href="https://wa.me/+541168401026"><img class="contactLogoColor" src="../Imagenes/whatsapp.png" alt="whatsapp"></a>
-                        <h1 class="contacto__Info-desc">+54 - 11 68401026</h1>
-                    </div>
-                    <div class="contacto__Info-gm">
-                        <img class="contactLogoColor" src="../Imagenes/correo.png" alt="Gmail">
-                        <h1 class="contacto__Info-desc">También podes contactarme por e-mail a jonaaf32@gmail.com</h1>
-                    </div>
-                </div>
+      <div class="contacto__Info">
+        <div class="contacto__Info-div1">
+          <div class="contacto__Info-desP">
+            <h1 class="contacto__Info-desc">
+              ¡Tu consulta no molesta! Escribime y buscamos el mejor diseño para
+              tu web.
+            </h1>
+          </div>
+          <div class="contacto__InfoP">
+            <div class="contacto__Info-wpp">
+              <a target="_blank" href="https://wa.me/+541168401026"
+                ><img
+                  class="contactLogoColor" id="logoWpp"
+                  src="../Imagenes/whatsapp.png"
+                  alt="whatsapp"
+              /></a>
+              <h1 class="contacto__Info-desc">+54 - 11 68401026</h1>
             </div>
+            <div class="contacto__Info-gm">
+              <img
+                class="contactLogoColor"
+                src="../Imagenes/correo.png"
+                alt="Gmail"
+              />
+              <h1 class="contacto__Info-desc-gm">
+                También podes contactarme por e-mail a
+                <span class="contacto__Frase2"
+                  >website@jonatanezequiel.com</span
+                >
+              </h1>
+            </div>
+          </div>
         </div>
-        <div class="contacto__Img">
-            <img class="contacto__ImgCodigo" src="./Imagenes/codigo.png" alt="Codigo">
-            <img class="contacto__ImgCodigo" src="./Imagenes/llaves.png" alt="LLaves">
-            <img class="contacto__ImgCodigo" src="./Imagenes/git.png" alt="Git">
-        </div>
-        <div class="contacto__Form">
-            <h1 class="contacto__Frase">Si no apareces en Google, <span class="contacto__Frase2">no existis.</span></h1>
-            <img class="contacto__Flecha" src="./Imagenes/flechaAbajo.png" alt="FlechaAbajo">
-            <form action="">
-                <div>
-                    <h1 class="contacto__Dato">Nombre</h1>
-                    <input class="contacto__Input" type="text" placeholder="Nombre">
-                </div>
-                <div>
-                    <h1 class="contacto__Dato">Correo electrónico</h1>
-                    <input class="contacto__Input" type="text" placeholder="Correo electrónico">
-                </div>
-                <div>
-                    <h1 class="contacto__Dato">Celular</h1>
-                    <input class="contacto__Input" type="number" placeholder="Celular">
-                </div>
-                <div>
-                    <h1 class="contacto__Dato">Consulta:</h1>
-                    <textarea class="contacto__Input textarea" name="mensaje" id="msg" rows="10"></textarea>
-                </div>
-                <div>
-                    <button class="contacto__Enviar">Enviar</button>
-                </div>
-            </form>
-        </div>
+      </div>
+      <div class="contacto__Img">
+        <img
+          class="contacto__ImgCodigo"
+          src="./Imagenes/codigo.png"
+          alt="Codigo"
+        />
+        <img
+          class="contacto__ImgCodigo"
+          src="./Imagenes/llaves.png"
+          alt="LLaves"
+        />
+        <img class="contacto__ImgCodigo" src="./Imagenes/git.png" alt="Git" />
+      </div>
+      <div class="contacto__Form">
+        <h1 class="contacto__Frase">
+          Si no estás en Google,
+          <span class="contacto__Frase3">no existis.</span>
+        </h1>
+        <img
+          class="contacto__Flecha"
+          src="./Imagenes/flechaAbajo.png"
+          alt="FlechaAbajo"
+        />
+        <form action="#" method="post">
+          <div>
+            <h1 class="contacto__Dato">Nombre</h1>
+            <input
+              class="contacto__Input"
+              type="text"
+              name="nombre"
+              placeholder="Nombre"
+            />
+          </div>
+          <div>
+            <h1 class="contacto__Dato">Correo electrónico</h1>
+            <input
+              class="contacto__Input"
+              type="text"
+              name="correo"
+              placeholder="Correo electrónico"
+            />
+          </div>
+          <div>
+            <h1 class="contacto__Dato">Celular</h1>
+            <input
+              class="contacto__Input"
+              type="number"
+              name="celular"
+              placeholder="Celular"
+            />
+          </div>
+          <div>
+            <h1 class="contacto__Dato">Consulta:</h1>
+            <textarea
+              class="contacto__Input textarea"
+              name="mensaje"
+              id="msg"
+              rows="10"
+            ></textarea>
+          </div>
+          <div>
+            <button type="submit" class="contacto__Enviar">Enviar</button>
+          </div>
+        </form>
+      </div>
     </div>
     <footer class="footer">
-        <div class="footer__ContLogo">
-            <img class="footer__Logo" src="./Imagenes/logoJE.png" alt="Logo Jonatan Ezequiel">
-            <h1 class="footer__DR">© Jonatan Ezequiel - Todos los derechos reservados. </h1>
-            <div class="footer__LineaDiv"></div>
-        </div>
-        <div>
-            <ul class="footer__Ul">
-                <li class="item"><a target="_blank" href="https://wa.me/+541168401026"><img class="contactLogo" src="./Imagenes/whatsapp.png" alt="WhatsappLogo"></a></li>
-                <li class="item"><a href="#inicio">Inicio</a></li>
-                <li class="item"><a href="#sobremi">Sobre mi</a></li>
-                <li class="item"><a href="#portfolio">Portfolio</a></li>
-                <li class="item"><a href="#servicios">Servicios</a></li>
-                <li class="item"><a href="./Paginas/Contacto.html">Contacto</a></li>
-            </ul>          
-        </div>
+      <div class="footer__ContLogo">
+        <img
+          class="footer__Logo"
+          src="./Imagenes/logoJE.png"
+          alt="Logo Jonatan Ezequiel"
+        />
+        <h1 class="footer__DR">
+          © Jonatan Ezequiel - Todos los derechos reservados.
+        </h1>
+        <div class="footer__LineaDiv"></div>
+      </div>
+      <div>
+        <ul class="footer__Ul">
+          <li class="item"><a href="#inicio">Inicio</a></li>
+          <li class="item"><a href="#sobremi">Sobre mi</a></li>
+          <li class="item"><a href="#portfolio">Portfolio</a></li>
+          <li class="item"><a href="#servicios">Servicios</a></li>
+          <li class="item"><a href="./Paginas/Contacto.html">Contacto</a></li>
+        </ul>
+      </div>
     </footer>
-      <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
     <script src="./index.js"></script>
     <script src="./particles.js"></script>
-</body>
+  </body>
 </html>
