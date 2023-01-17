@@ -14,7 +14,6 @@ window.onscroll = function(){
     ubicacionPrincipal = desplazamientoActual;
 } 
 
-
 // Efecto Máquina //
 
 let nombre = document.querySelector (".inicio__Nombre")
@@ -31,8 +30,6 @@ function efectoMaquina () {
 }
 
 setTimeout (efectoMaquina, speed)
-
-
 
 // Aparición de Elementos en INICIO //
 
@@ -58,16 +55,15 @@ observador.observe(text2)
 
 let sobreMi = document.querySelector ('.sobremi__Tec')
 
-let tecImg = [{'logoTec': '../Imagenes/html.png', 'tec': 'HTML'},
-              {'logoTec': '../Imagenes/css.png', 'tec': 'CSS'},
-              {'logoTec': '../Imagenes/js.png', 'tec': 'JAVASCRIPT'},
-              {'logoTec': '../Imagenes/bootstrap.jpg', 'tec': 'BOOTSTRAP'},
-              {'logoTec': '../Imagenes/react.png', 'tec': 'REACT'},
-              {'logoTec': '../Imagenes/sass.png', 'tec': 'SASS'},
-              {'logoTec': '../Imagenes/git.png', 'tec': 'GIT'},
-              {'logoTec': '../Imagenes/node.png', 'tec': 'NODE'},
-              {'logoTec': '../Imagenes/python.png', 'tec': 'PYTHON'}
-            ]
+let tecImg = [{'logoTec': './Imagenes/html.png', 'tec': 'HTML'},
+              {'logoTec': './Imagenes/css.png', 'tec': 'CSS'},
+              {'logoTec': './Imagenes/js.png', 'tec': 'JAVASCRIPT'},
+              {'logoTec': './Imagenes/bootstrap.jpg', 'tec': 'BOOTSTRAP'},
+              {'logoTec': './Imagenes/react.png', 'tec': 'REACT'},
+              {'logoTec': './Imagenes/sass.png', 'tec': 'SASS'},
+              {'logoTec': './Imagenes/git.png', 'tec': 'GIT'},
+              {'logoTec': './Imagenes/node.png', 'tec': 'NODE'},
+              {'logoTec': './Imagenes/mongo.png', 'tec': 'NODE'}]
 
 let mostrarTecImg = (logoTec, tec) => {
     let imgTecCont = document.createElement ('DIV')
@@ -127,56 +123,10 @@ observador1.observe(iconWp)
 observador1.observe(iconIn)
 observador1.observe(tecDev)
 observador1.observe(tecDevImg)
-/* PORTFOLIO */
-/* 
-let portfolio = document.querySelector ('.portfolio')
-
-let proyectos = [{'portImg': '../Imagenes/davidMilan.png',
-                  'titulo': 'DAVID MILAN'},
-                 {'portImg': '../Imagenes/fotografo.png',
-                  'titulo': 'EZEQUIEL PH'},
-                 {'portImg': '../Imagenes/davidMilan.png',
-                  'titulo': 'David Milan'},
-                 {'portImg': '../Imagenes/fotografo.png',
-                  'titulo': 'Ezequiel PH'}]
-
-let mostrarProyectos = (portImg, titulo) => {
-    let proyCont = document.createElement ('DIV')
-    let proyImg = document.createElement ('IMG')
-    let proyTitulo = document.createElement ('H1')
-    let proyBtn = document.createElement ('DIV')
-
-    portfolio.appendChild (proyCont)
-    proyCont.appendChild (proyImg)
-    proyCont.appendChild(proyTitulo)
-    proyCont.appendChild(proyBtn)
-
-    proyCont.classList.add ('portfolio__Cont')
-    proyImg.classList.add ('portfolio__Img')
-    proyTitulo.classList.add ('portfolio__Titulo')
-    proyBtn.classList.add ('portfolio__Btn')
-
-    proyImg.setAttribute ('src', portImg)
-    proyTitulo.textContent = titulo
-    proyBtn.textContent = 'Ver Sitio'
-
-    return proyCont;
-}
-
-let portfolioDC = document.createDocumentFragment()
-
-for (let i = 0; i < proyectos.length; i++) {
-    let portfolioN = mostrarProyectos(proyectos[i].portImg, proyectos[i].titulo)
-    portfolioDC.appendChild(portfolioN);
-}
-
-portfolio.appendChild(portfolioDC)
-
- */
 
 /* NAV MOBILE */
 
-let menuMobile = document.querySelector ('.menuMovil')
+/* let menuMobile = document.querySelector ('.menuMovil')
 let menuMobileX = document.querySelector ('.xmenumovil')
 let navMobile = document.querySelector ('.navMobile')
 
@@ -199,5 +149,5 @@ const cerrarMenuMobile = () => {
 }
 
 menuMobileX.addEventListener ('click', cerrarMenuMobile) 
-
+ */
 
