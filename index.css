@@ -1101,9 +1101,17 @@ form {
         padding: 0;
         box-sizing: border-box;
     }
+
+    * {
+        overflow-x: hidden;
+    }
     
     body {
         overflow-x: hidden;
+    }
+
+    .flechaAbajo {
+        display: none;
     }
     
     #particles-js {
@@ -1114,10 +1122,11 @@ form {
     }
     
     .inicio {
-        z-index: 99;
+        display: none;
+       /*  z-index: 99;
         width: 100%;
         height: 100vh;
-        background: black;
+        background: black; */
        /*  display: flex;
         flex-direction: column;
         justify-content: center;
@@ -1134,24 +1143,24 @@ form {
     }
     
     .logoImg {
-        width: 300px;
-        height: 300px;
+        width: 200px;
+        height: 200px;
         position: absolute;
-        top: -30%;
+        top: -10%;
         object-fit: cover;
     }
     
     .inicio__Nombre {
         color: wheat;
         width: auto;
-        font-size: 2.5rem;
+        font-size: 1.8rem;
         font-family: 'Play', sans-serif;
         position: absolute;
         top: 50%;
     }
     
     .inicio__Titulo {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
         font-family: 'Rajdhani', sans-serif;
         opacity: 0;
         transition: 1.5s ease-in-out all;
@@ -1164,25 +1173,7 @@ form {
     
     .inicio__Titulo.visible {
         opacity: 1;
-        transform: translateY(-110px);
-    }
-    
-    /* NAV */
-    
-    .navBar__Container{
-        display: none;
-    }
-    
-    .menumovil {
-        display: none;
-    }
-    
-    .xmenumovil {
-        display: none;
-    }
-    
-    .navMobile {
-        display: none;
+        transform: translateY(-100px);
     }
     
     .header {
@@ -1208,49 +1199,10 @@ form {
         transition: all 1.5s;
     }
     
-    .nav {
-        height: 70px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .ul {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        width: auto;
-        height: auto;
-    }
-    
-    .item {
-        font-size: 1.5rem;
-        list-style: none;
-        margin: 1rem;
-        font-family: 'Source Sans Pro', sans-serif;
-    }
-    
-    .item:hover {
-        transform: scale(1.05);
-    }
-    
-    a:hover {
-        color: rgb(232, 240, 240);
-        
-    }
-    
-    .item a {
-        text-decoration: none;
-        color: rgb(212, 206, 198);
-        text-shadow: #060614 2px 2px;
-        font-weight: bold;
-    }
-    
     /* SOBRE MI */
     
     .sobremi {
-        width: 100%;
+        width: auto;
         height: 100vh;
         background-color: rgb(1, 5, 5);
         display: flex;
@@ -1261,18 +1213,18 @@ form {
     
     .sobremi__Img {
         width: auto;
-        height: auto;
+        height: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
     }
     
     .sobremi__ImgJ {
-        width: 350px;
-        height: 350px;
+        border-radius: 2px;
+        width: 300px;
+        height: 300px;
         opacity: 0;
         transition: 1s ease-in-out all;
-        object-fit: cover;
     }
     
     .sobremi__ImgJ.visible {
@@ -1282,9 +1234,9 @@ form {
     }
     
     .sobremi__Desc {
+        height: 100%;
         font-family: 'Outfit', sans-serif;
         font-weight: 150;
-        color: #e4dede;
         width: auto;  
         display: flex;
         flex-direction: column;
@@ -1293,25 +1245,27 @@ form {
     }
     
     .sobremi__Titulo {
+        color: #f6f3f3;
         transition: 1s ease-in-out all;
         margin: 1rem;
-        opacity: 0;
-        font-size: 2rem;
+        opacity: 1;
+        font-size: 1.3rem;
     }
     
     .sobremi__Titulo.visible {
         opacity: 1;
-        transform: translateY(7%);
+        transform: translateY(10%);
     }
     
     .sobremi__P {
+        color: #e4dede;
         font-family: 'Hind', sans-serif;
         text-align: justify;
         width: 70%;
         height: auto;
         transition: 1.5s ease-in-out all;
         opacity: 0;
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
     
     .sobremi__P.visible {
@@ -1334,10 +1288,7 @@ form {
     }
     
     .sobremi__ContactWp {
-        opacity: 0;
-        transition: 1.5s ease-in-out all;
-        background-color: #e4dede;
-        margin: 1rem;
+       display: none;
     }
     
     .sobremi__ContactWp.visible {
@@ -1346,9 +1297,7 @@ form {
     }
     
     .sobremi__ContactIn {
-        transition: 1.5s ease-in-out all;
-        background-color: #e4dede;
-        margin: 1rem; 
+        display: none;
     }
     
     .sobremi__ContactIn.visible {
@@ -1363,23 +1312,23 @@ form {
     }
     
     .sobremi__TecCont {
+        width: auto;
+        height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 100%;
-        height: 100%;
     }
     
     .sobremi__Tec {
-        margin-bottom: 2rem;
+        height: 100%;
+        margin-bottom: 1rem;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
         opacity: 0;
         transition: 1s ease-in-out all;
-        width: 85%;
         height: auto;
         background-color: rgba(242, 242, 241, 0.897);
         z-index: 99;
@@ -1388,8 +1337,8 @@ form {
     }
     
     .codigoImg {
-        width: 90px;
-        height: 90px;
+        width: 50px;
+        height: 50px;
         position: absolute;
         top: -45px;
         left: -45px;
@@ -1403,8 +1352,8 @@ form {
     }
     
     .llavesImg {
-        width: 110px;
-        height: 90px;
+        width: 50px;
+        height: 50px;
         position: absolute;
         top: -45px;
         right: -50px;
@@ -1412,8 +1361,8 @@ form {
     }
     
     .githubImg {
-        width: 90px;
-        height: 90px;
+        width: 50px;
+        height: 50px;
         position: absolute;
         bottom: -15px;
         right: -50px;
@@ -1429,16 +1378,15 @@ form {
         font-family: 'Rubik', sans-serif;
         text-shadow: #a6be1b 1px 1px;
         text-align: center;
-        font-size: 1.6rem;
+        font-size: 1.2rem;
         color:  #060614;
         /* text-shadow: #0e0f14 1px 1px; */
-        margin: 1.5rem;
-        height: 70px;
+        margin: 1rem;
     }
     
     .imgTecCont {
-        width: 170px;
-        height: 170px;
+        width: 120px;
+        height: 150px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -1447,8 +1395,8 @@ form {
     }
     
     .sobremi__ImgTec {
-        width: 100px;
-        height: 100px;
+        width: 50px;
+        height: 50px;
         
     }
     
@@ -1459,7 +1407,7 @@ form {
     
     .nameTec {
         font-family: 'Rajdhani', sans-serif;
-        font-size: 1.5rem;
+        font-size: 1.4rem;
         font-weight: bold;
         margin: 1rem;
         width: auto;
@@ -1469,8 +1417,8 @@ form {
     
     .portfolio {
         width: 100%;
-        height: 130vh;
-        background-color: #060614;
+        height: 100%;
+        background-color: #f3f3f8;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -1478,9 +1426,9 @@ form {
     }
     
     .portfolio__Cont {
-        width: 80%;
-        height: 90%;
-        background-color: #f7f5f7;
+        width: 95vw;
+        height: auto;
+        background-color: #050505;
         border-radius: 2px;
         display: flex;
         flex-wrap: wrap;
@@ -1489,92 +1437,29 @@ form {
     }
     
     .portfolio__Inicio {
-       color: #dce6db;
+       color: #070707f3;
        font-size: 3rem;
        font-family: 'Rubik', sans-serif;
        height: 70px;
        text-shadow: #a6be1b 1px 1px;
     }
     
-    .cont1 {
-        width: 700px;
-        height: 500px;
-        background-color: rgb(8, 7, 7);
+    .cont {
+        width: 500px;
+        height: 450px;
+        background-color: rgb(252, 247, 247);
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         border-radius: 2px;
         transition: 1s ease-in-out all;
-        opacity: 0;
         margin: 1rem;
-    }
-    
-    .cont1.visible {
-        opacity: 1;
-        border: #dce6db solid 1px;
-    }
-    
-    .cont2 {
-        margin: 1rem;
-        width: 700px;
-        height: 500px;
-        background-color: rgb(8, 7, 7);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        border-radius: 2px;
-        opacity: 0;
-        transition: 1s ease-in-out all;
-    }
-    
-    .cont2.visible {
-        opacity: 1;
-        border: #dce6db solid 1px;
-    }
-    
-    .cont3 {
-        margin: 1rem;
-        width: 700px;
-        height: 500px;
-        background-color: rgb(8, 7, 7);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        border-radius: 2px;
-        opacity: 0;
-        transition: 1s ease-in-out all;
-    }
-    
-    .cont3.visible {
-        opacity: 1;
-        border: #dce6db solid 1px;
-    }
-    
-    .cont4 {
-        margin: 1rem;
-        width: 700px;
-        height: 500px;
-        background-color: rgb(8, 7, 7);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        border-radius: 2px;
-        opacity: 0;
-        transition: 1.5s ease-in-out all;
-    }
-    
-    .cont4.visible {
-        opacity: 1;
-        border: #dce6db solid 1px;
     }
     
     .portfolio__Img {
-        width: 500px;
-        height: 300px;
+        width: 350px;
+        height: 350px;
         object-fit: cover;
         margin: auto;
     }
@@ -1582,14 +1467,14 @@ form {
     .portfolio__Titulo {
         font-size: 1.8rem;
         font-family: 'Rubik', sans-serif;
-        color: #dce6db;
+        color: #040504;
     }
     
     .portfolio__Btn {
         text-align: center;
-        width: 100px;
+        width: auto;
         height: 35px;
-        color: #f7f0f0;
+        color: #050505;
         margin: auto;
         border-radius: 5px;
         display: flex;
@@ -1605,7 +1490,7 @@ form {
     /* CONTACTO */
     
     .contacto {
-        width: 100%;
+        width: auto;
         height: auto;
         display: flex;
         flex-direction: column;
@@ -1797,157 +1682,6 @@ form {
         color: #040a03f1;
         border: none;
     
-    }
-    
-    /* SERVICIOS */
-    
-    
-    .servicios {
-        width: auto;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-    }
-    
-    .servicios__Titulo {
-        font-size: 3rem;
-        font-family: 'Rubik', sans-serif;
-        text-shadow: #a6be1b 1px 1px;
-        height: 75px;
-    }
-    
-    .servicios_Container {
-        background-color: #060614;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        height: auto;
-    }
-    
-    .servicios__Cont {
-        width: auto;
-        min-width: 300px;
-        max-width: 200px;
-        height: 700px;
-        background-color: #030302;
-        border-radius: 5px;
-        border: solid #fff 1px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin: 1rem;
-    }
-    @keyframes plan {
-        0% {
-            -webkit-box-shadow: -6px -6px 5px 0px rgba(245,237,245,1);
-        -moz-box-shadow: -6px -6px 5px 0px rgba(245,237,245,1);
-        box-shadow: -6px -6px 5px 0px rgba(245,237,245,1);
-        }
-        50% {
-            -webkit-box-shadow: 5px -6px 5px 0px rgba(245,237,245,1);
-        -moz-box-shadow: 5px -6px 5px 0px rgba(245,237,245,1);
-        box-shadow: 5px -6px 5px 0px rgba(245,237,245,1);
-        }
-        100% {
-            -webkit-box-shadow: -6px -6px 5px 0px rgba(245,237,245,1);
-        -moz-box-shadow: -6px -6px 5px 0px rgba(245,237,245,1);
-        box-shadow: -6px -6px 5px 0px rgba(245,237,245,1);
-        }
-    }
-    
-    .servicios__Plan {
-        margin: 1rem;
-        font-size: 2.5rem;
-        font-family: 'Play', sans-serif;
-        height: 50px;
-        color: #fff;
-    }
-    
-    .servicios__ContPrecio {
-        margin: 1rem;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        height: 65px;
-        width: 220px;
-        border-radius: 2px;
-        position: relative;
-        background-color: rgba(240, 246, 240, 0.97);
-    }
-    
-    .servicios__Peso {
-        font-size: 1.7rem;
-        font-family: 'Lato', sans-serif;
-        margin: 5px;
-    }
-    
-    .servicios__Precio {
-        font-size: 2.5rem;
-        font-family: 'Lato', sans-serif;
-        margin: 5px;
-    }
-    
-    .servicios__Decimal {
-        font-family: 'Lato', sans-serif;
-        font-size: 1.5rem;
-        margin: 5px;
-    }
-    
-    .servicios__Mes {
-        font-family: 'Lato', sans-serif;
-        font-size: 1.2rem;
-        position: absolute;
-        top: 2.5rem;
-        right: 10px;
-    }
-    
-    .servicios__ContInfo {
-        box-shadow: #dce6db 1px;
-        display: flex;
-        flex-direction: column;
-        align-items: baseline;
-        margin: auto;
-        width: 400px;
-        height: 45%;
-    }
-    
-    .servicios__Info  {
-        font-family: 'Lato', sans-serif;
-        font-size: 1.2rem;
-        margin: 2px;
-        padding: 5px;
-        color: #fff;
-    }
-    
-    .servicios_Contactame {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    .servicios__ContactPlan {
-        margin: 1.5rem;
-        font-family: 'Source Sans Pro', sans-serif;
-        font-size: 2rem;
-        text-decoration: none;
-        color: #4615ba;
-        animation: infinite 1.8s contratar;
-    }
-    
-    @keyframes contratar {
-        0% {
-            transform: scale(1);
-        }
-        50% {
-            transform: scale(1.1);
-        }
-        100% {
-            transform: scale(1);
-        }
     }
     
     .itemImg {

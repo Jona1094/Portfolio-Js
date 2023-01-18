@@ -63,7 +63,7 @@ let tecImg = [{'logoTec': './Imagenes/html.png', 'tec': 'HTML'},
               {'logoTec': './Imagenes/sass.png', 'tec': 'SASS'},
               {'logoTec': './Imagenes/git.png', 'tec': 'GIT'},
               {'logoTec': './Imagenes/node.png', 'tec': 'NODE'},
-              {'logoTec': './Imagenes/mongo.png', 'tec': 'NODE'}]
+              {'logoTec': './Imagenes/mongo.png', 'tec': 'MONGO DB'}]
 
 let mostrarTecImg = (logoTec, tec) => {
     let imgTecCont = document.createElement ('DIV')
